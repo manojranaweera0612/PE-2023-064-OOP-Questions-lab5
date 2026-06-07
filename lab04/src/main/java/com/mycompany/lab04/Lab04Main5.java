@@ -3,7 +3,7 @@ public class Lab04Main5 {
     public static void main(String[] args) {
 
         // Show system name
-        StaffMember.showSystemName();
+        StaffMember1.showSystemName();
 
         // Create 3 staff objects
         Lecturer lecturer1 =
@@ -24,8 +24,8 @@ public class Lab04Main5 {
                         45000
                 );
 
-        LabAssistant assistant =
-                new LabAssistant(
+        LabAssistant1 assistant =
+                new LabAssistant1(
                         "Kamal",
                         "A001",
                         "Science",
@@ -36,7 +36,7 @@ public class Lab04Main5 {
         // Print total staff count
         System.out.println(
                 "Total Staff Count: "
-                + StaffMember.getStaffCount()
+                + StaffMember1.getStaffCount()
         );
     }
 }
