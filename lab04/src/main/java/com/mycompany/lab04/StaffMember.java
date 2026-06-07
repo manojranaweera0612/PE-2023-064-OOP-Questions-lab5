@@ -6,7 +6,10 @@ abstract class StaffMember {
     protected String department;
 
     // Constructor
-    public StaffMember(String fullName, String staffId, String department) {
+    public StaffMember(String fullName,
+            String staffId,
+            String department) {
+
         this.fullName = fullName;
         this.staffId = staffId;
         this.department = department;
@@ -27,9 +30,15 @@ abstract class StaffMember {
 
     // Final Method
     public final void displayBasicDetails() {
-        System.out.println("Full Name: " + fullName);
-        System.out.println("Staff ID: " + staffId);
-        System.out.println("Department: " + department);
+
+        System.out.println("Full Name: "
+                + fullName);
+
+        System.out.println("Staff ID: "
+                + staffId);
+
+        System.out.println("Department: "
+                + department);
     }
 
     // Abstract Method
