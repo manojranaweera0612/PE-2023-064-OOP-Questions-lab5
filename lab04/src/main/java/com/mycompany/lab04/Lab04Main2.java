@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.lab04;
-
-/**
- *
- * @author dinus
- */
 public class Lab04Main2 {
-    
+
+    public static void main(String[] args) {
+
+        Lecturer lecturer =
+                new Lecturer(
+                        "Nimal",
+                        "L001",
+                        "IT",
+                        4,
+                        50000
+                );
+
+        LabAssistant assistant =
+                new LabAssistant(
+                        "Kamal",
+                        "A001",
+                        "Science",
+                        100,
+                        1000
+                );
+
+        lecturer.displayLecturerDetails();
+
+        System.out.println();
+
+        assistant.displayLabAssistantDetails();
+    }
 }
