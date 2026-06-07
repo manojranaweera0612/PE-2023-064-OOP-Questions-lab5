@@ -1,14 +1,27 @@
-public class Lab04Main4 {
+public class Lab04Main5 {
 
     public static void main(String[] args) {
 
-        Lecturer lecturer =
+        // Show system name
+        StaffMember.showSystemName();
+
+        // Create 3 staff objects
+        Lecturer lecturer1 =
                 new Lecturer(
                         "Nimal",
                         "L001",
                         "IT",
                         4,
                         50000
+                );
+
+        Lecturer lecturer2 =
+                new Lecturer(
+                        "Sunil",
+                        "L002",
+                        "Management",
+                        3,
+                        45000
                 );
 
         LabAssistant assistant =
@@ -20,17 +33,10 @@ public class Lab04Main4 {
                         1000
                 );
 
-        UniversityPolicy.showPolicyHeader();
-
+        // Print total staff count
         System.out.println(
-                UniversityPolicy.UNIVERSITY_NAME);
-
-        System.out.println("Lecturer Bonus: "
-                + UniversityPolicy.calculateBonus(
-                        lecturer.calculateMonthlyPayment()));
-
-        System.out.println("Assistant Bonus: "
-                + UniversityPolicy.calculateBonus(
-                        assistant.calculateMonthlyPayment()));
+                "Total Staff Count: "
+                + StaffMember.getStaffCount()
+        );
     }
 }
